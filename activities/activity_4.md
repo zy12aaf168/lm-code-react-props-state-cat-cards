@@ -31,7 +31,7 @@ Your App should look something like this:
 <summary>Click here to see the result</summary>
 <pre>
 
-![Cats! Cats everywhere!](../public/activity_4_example.jpg)
+![Cards! Cards everywhere!](../public/activity_4_example.jpg)
 
 </pre>
 </details>

@@ -4,7 +4,7 @@ Awesome.
 
 We now have a cat card rendering for every cat in our data!
 
-But each cat card currently shows Mr Gwumpy. 😾
+But each cat card currently shows info for Mr Gwumpy. 😾
 
 As adorable as he is, all the other cats in our array need their time to shine. ☀️
 
@@ -28,7 +28,7 @@ Simple.
 
 # Step 1 - Receiving Properties
 
--   First, we need to tell `CatCard` what props its expecting to take.
+- First, we need to tell `CatCard` what props it's expecting to take.
 
 Add a `CatCardProps` interface to `cat_card.tsx`:
 
@@ -42,11 +42,13 @@ interface CatCardProps{
 
 ```
 
--   Update `CatCard` to take the props. Hint: Instead of just being a vanilla `React.FC`, `CatCard` is now a `React.FC<CatCardProps>`.
+- Update `CatCard` to take in props. 
 
-And also in `CatCard.tsx` update the CatCard functions parameters to receive some delicious 'props'
+Hint: Instead of being annotated with just `React.FC` it should now be annotated with `React.FC<CatCardProps>`
 
-The code should look something like this:
+- Now update the `CatCard` functions parameters to receive some delicious 'props'
+
+Your code should look something like this:
 
 ```JavaScript
 // cat_card.tsx
@@ -70,13 +72,13 @@ export default CatCard;
 
 ```
 
-Note that the `props` incoming are just like how a normal JavaScript function receives stuff - cool 😎
+The incoming `props` are just like how a normal JavaScript function receives stuff - cool 😎
 
-Note: We don't have to call our parameter `props` here, we could call it `data`, or `cat`, or `bingoWings` if we wanted to! But `props` is fine for now and will help you remember the lingo 👍 And it's also what most developers will do - remember it's good to use common terms and stick to conventions wherever possible.
+Note: We don't have to call our parameter `props` here, we could call it `data`, or `cat`, or `bingoWings` if we wanted to! But `props` is fine for now and will help you remember the lingo 👍
 
 # Step 2 - Passing Properties
 
-Now that the receiving interface is set up, in `App.tsx` we can pass properties from the cat object we're looping over to our cat card like this:
+Now that the receiving interface is set up, in `App.tsx` we can pass properties from the cat object we're looping over to our cat card, like this:
 
 `<CatCard name={cat.name} species={cat.species} />`
 
