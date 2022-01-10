@@ -1,6 +1,6 @@
 # React Props and State
 
-Welcome back to the wonderful world of React Part 2! 
+Welcome back to the wonderful world of React Part 2!
 
 This time we'll be investigating React Props and State. Let's get started 🙌
 
@@ -40,17 +40,17 @@ The page will reload if you make edits 👍
 
 You will also see any lint errors in the console ✅
 
-Meow, lets get started! 
+Meow, lets get started!
 
 # Learning ~~Recat~~ Recap
 
-![Recap](./public/recat.png )
+![Recap](./public/recat.png)
 
 So previously on Cat Cards The React App we learnt:
 
-- about the file structure of a React application
-- that a component is a reusable piece of code that looks like a JavaScript function but returns JSX
+-   about the file structure of a React application
+-   that a component is a reusable piece of code that looks like a JavaScript function but returns JSX
 
 Cool. 😺
 
-Head over to [Activity 1](./activities/activity-1.md) to get started!
+Head over to [Activity 1](./activities/activity_1.md) to get started!

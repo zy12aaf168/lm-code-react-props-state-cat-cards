@@ -227,4 +227,4 @@ The preferred way to solve this is for all your arrays to have proper permanent 
 
 ## Nearly There!
 
-Let's see if we can push this just a little further with some extension activities: [Activity 9 - Extension](./activity-9-extension.md)
+Let's see if we can push this just a little further with some extension activities: [Activity 9 - Extension](./activity_9_extension.md)

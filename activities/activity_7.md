@@ -123,4 +123,4 @@ Great work!
 
 Our Cat app is now "reacting" to changes in our state! 🙌
 
-Let's push this to the next level! [Activity 8](./activity-8.md)
+Let's push this to the next level! [Activity 8](./activity_8.md)

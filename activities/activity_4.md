@@ -40,4 +40,4 @@ Your App should look something like this:
 
 P.s. don't forget to delete your original `<CatCard />` line from `App.tsx` if you haven't already!
 
-Time to jive in [Activity 5](./activity-5.md) 💃🕺
+Time to jive in [Activity 5](./activity_5.md) 💃🕺

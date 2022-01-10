@@ -229,4 +229,4 @@ Note: You may see a warning that looks a bit like this:
 
 This is just telling us that one of our `useState()` variables isn't being used. Ignore this for now 🙂
 
-Time to move to [Activity 2](./activity-2.md)!
+Time to move to [Activity 2](./activity_2.md)!

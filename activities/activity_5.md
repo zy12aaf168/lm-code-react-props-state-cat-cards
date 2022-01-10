@@ -223,4 +223,4 @@ That was a lot to get through but I think you'll agree, our cat cards are lookin
 
 Don't forget to take a break 🌯
 
-Then let's see what else we can do with props! [Activity 6](./activity-6.md)
+Then let's see what else we can do with props! [Activity 6](./activity_6.md)

@@ -233,4 +233,4 @@ _Note: This is kind of a silly design!_ It would make much more sense to load al
 
 (We will come back to this later, but if you want, you can go back and refactor at the end of the assignemnt - so all the data is stored in `App.tsx` and passed down as props in a cleaner manner.)
 
-Yay! Now we have images and licence information! Let's move onto [Activity 7](./activity-7.md)
+Yay! Now we have images and licence information! Let's move onto [Activity 7](./activity_7.md)

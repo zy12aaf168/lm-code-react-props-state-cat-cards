@@ -45,4 +45,4 @@ export default CatCard;
 
 Component created and ready to go!
 
-Time to see [Activity 3](./activity-3.md) 😸
+Time to see [Activity 3](./activity_3.md) 😸
