@@ -28,7 +28,7 @@ Simple.
 
 # Step 1 - Receiving Properties
 
-- First, we need to tell `CatCard` what props it's expecting to take.
+-   First, we need to tell `CatCard` what props it's expecting to take.
 
 Add a `CatCardProps` interface to `cat_card.tsx`:
 
@@ -42,11 +42,11 @@ interface CatCardProps{
 
 ```
 
-- Update `CatCard` to take in props. 
+-   Update `CatCard` to take in props.
 
 Hint: Instead of being annotated with just `React.FC` it should now be annotated with `React.FC<CatCardProps>`
 
-- Now update the `CatCard` functions parameters to receive some delicious 'props'
+-   Now update the `CatCard` functions parameters to receive some delicious 'props'
 
 Your code should look something like this:
 
@@ -99,17 +99,17 @@ To check our cat card is receiving our cat data properties, we can add a console
 
 ❗ Note! Our CatCard currently uses an _implicit return_, i.e. we return straight JSX from the function without the use of the `return` statement:
 
-i.e 
+i.e
 
-```JavaScript 
-	() => <SomeJSX/> // an implicit return 
-	vs 
+```JavaScript
+	() => <SomeJSX/> // an implicit return
+	vs
 	() => { return (<SomeJSX/>)}
 ```
 
-If we added some code before `<SomeJSX/>`, React would complain. So to introduce some of our own code, we have to remember t add curly braces and wrap the JSX in a `return()` statement like this `() => { return (<SomeJSX/>)}`.
+If we added some code before `<SomeJSX/>`, React would complain. So to introduce some of our own code, we have to remember to add curly braces and wrap the JSX in a `return()` statement like this `() => { return (<SomeJSX/>)}`.
 
-- Add the `console.log`, curly braces `{}` and `return()` statement. Your code should look like this:
+-   Add the `console.log`, curly braces `{}` and `return()` statement. Your code should look like this:
 
 ```JavaScript
 const CatCard: React.FC<CatCardProps> = (props) => {
@@ -152,15 +152,15 @@ To do this we simply need to replace our hard-coded cat information with our pro
 
 ## Step 3.1
 
-- In the cat cards `<h3>` replace Mr Gwumpy with `{props.name}`
+-   In the cat cards `<h3>` replace Mr Gwumpy with `{props.name}`
 
-- Save your work and check the browser.
+-   Save your work and check the browser.
 
 Your cat cards should now show other cats names!
 
 ## Step 3.2
 
-- Following the same pattern, replace the rest of the hard coded data with props
+-   Following the same pattern, replace the rest of the hard coded data with props
 
 <details>
 <summary>Click here to see the final result</summary>

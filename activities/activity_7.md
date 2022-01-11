@@ -8,7 +8,7 @@ This Header count is a perfect example of "state" or "dynamic data" in our app. 
 
 One way to do this is by working out the number of cats in our array and passing this count down to our Header component using props.
 
-- How would we check or count the number of objects in an array in JavaScript?
+-   How would we check or count the number of objects in an array in JavaScript?
 
 <details>
 <summary>Click here to find out how!</summary>
@@ -23,7 +23,7 @@ One way to do this is by working out the number of cats in our array and passing
 
 Now we have the number of cats in our array (`console.log()` this to double check!)
 
-- How could we insert this JavaScript logic into our Header element? 🤔
+-   How could we insert this JavaScript logic into our Header element? 🤔
 
 We'll need to pass our catCount variable down to our Header component as props then access those props in our `<h2>`
 
@@ -77,7 +77,7 @@ Boom! Our Cat App now accurately reflects how many cats there are! 😺
 
 To test whether our Header component is accurately reflecting our applications state though, let's add another cat to our app to make sure!
 
-In `App.tsz` in the `useState()` function add Captain Catface to our cat data array
+In `App.tsx` in the `useState()` function add Captain Catface to our cat data array
 
 ```JavaScript
     {
