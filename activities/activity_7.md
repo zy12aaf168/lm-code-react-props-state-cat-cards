@@ -8,7 +8,7 @@ This Header count is a perfect example of "state" or "dynamic data" in our app. 
 
 One way to do this is by working out the number of cats in our array and passing this count down to our Header component using props.
 
--   How would we check or count the number of objects in an array in JavaScript?
+- How would we check or count the number of objects in an array in JavaScript?
 
 <details>
 <summary>Click here to find out how!</summary>
@@ -16,32 +16,34 @@ One way to do this is by working out the number of cats in our array and passing
 
 // In `App.tsx` above our return statement, declare a variable and save our cats length to it
 
-`const catCount = cats.length`
+`const catCount = cats.length;`
 
 </pre>
 </details>
 
-Now we have the number of cats in our array (console.log() this to double check!)
+Now we have the number of cats in our array (`console.log()` this to double check!)
 
--   How could we insert this JavaScript logic into our Header element?
+- How could we insert this JavaScript logic into our Header element? 🤔
 
--   We'll need to pass our catCount variable down to our Header component as props then access those props in our `<h2>`
+We'll need to pass our catCount variable down to our Header component as props then access those props in our `<h2>`
 
-Have a go yourself then..
+Have a go yourself then...
 
 <details>
 <summary>Click here to find out how!</summary>
 <pre>
 
-// In `App.tsx` we pass our catCount variable to our Header component through props
+In `App.tsx` we pass our catCount variable to our Header component through props:
 
 `<Header catCount={catCount}>`
 
-// In `header.tsx` we receive props through the Header parameters. We'll also need to add a new HeaderProps interface!
+In `header.tsx` we receive props through the Header parameters. We'll also need to add a new HeaderProps interface!
 
 `const Header : React.FC<HeaderProps> = (props) => <>rest of component here</>`
 
-// In `header.tsx` we replace the 0 with our dynamic data
+In `header.tsx` we replace the 0 with our dynamic data.
+
+Your component should look something like this:
 
 ```JavaScript
 
@@ -62,27 +64,27 @@ Let's break it down. 🔨
 
 In `App.tsx` we use the JavaScript `.length` property to count how many cat objects there are and save this number to a variable
 
-We pass this variable to our Header component using props
+We pass this variable to our Header component using props.
 
-Our Header component receives our props through it's parameters
+Our Header component receives our props through it's parameters.
 
-We use curly braces to replace the 0 in our h2 with our props
+We use curly braces to replace the 0 in our h2 with our props.
 
 </pre>
 </details>
 
 Boom! Our Cat App now accurately reflects how many cats there are! 😺
 
-To test whether our Header component is accurately reflecting our applications state though, let's add another cat to our basket to make sure!
+To test whether our Header component is accurately reflecting our applications state though, let's add another cat to our app to make sure!
 
-In our `useState()` function add Captain Catface into our cat data array
+In `App.tsz` in the `useState()` function add Captain Catface to our cat data array
 
-```
-{
-      "name": "Captain Catface",
-      "species": "Sea Cattain",
-      "favFoods": ["fish, rum"],
-      "birthYear": 2016,
+```JavaScript
+    {
+      name: "Captain Catface",
+      species: "Sea Cattain",
+      favFoods: ["fish, rum"],
+      birthYear: 2016,
     }
 ```
 
@@ -109,7 +111,7 @@ Change the way we render the `CatImage` component in `cat_card.tsx` to only rend
 			)}
 ```
 
-Again, the smart way to do this would be to load the images along with the cat data in `App.tsx`, so they couldn't get out of step. Or maybe even to combine the arrays so the images are always stored with the cats? Or we could make it so images are _completely_ optional and if the data isn't there then it simply doesn't render, but it doesn't crash..?
+Again, the smart way to do this would be to load the images along with the cat data in `App.tsx`, so they couldn't get out of step. Or maybe even to combine the arrays so the images are always stored with the cats? Or we could make it so images are _completely_ optional and if the data isn't there then it simply doesn't render (without crashing)?
 
 The point is there's lots of better ways to do it! As we're writing our apps we can look out for these kinds of inefficiencies and try to improve on the design.
 
@@ -117,7 +119,7 @@ We'll come up with one better way in the next activity.
 
 ---
 
-Our header should now say "There are currently 17 Cats in this Cat App".
+Your header should now say how many cats there are!
 
 Great work!
 

@@ -24,7 +24,7 @@ Knowing what you've learnt from looping through cats, can you create a Dog Compo
 
 Once you've got this working (creating components and passing props and state is great practice), a further consideration might be:
 
--   Do you need a new Dog card component at all? Re-naming CatCard to just Card and passing the dog data to this card component might save some code? Don't let the cats hear about it though! 😾
+-   Do you need a new Dog card component at all? 🤯 Re-naming CatCard to just Card and passing the dog data to this card component might save some code? Don't let the cats hear about it though! 😾
 
 # Extension 2 - Food for Thought 🍤
 
@@ -40,9 +40,9 @@ It would be great for our users to be able to add their favourite cats (and dogs
 
 -   Add a form for users to submit new cats, with input text boxes for fields like name, species, fave food, etc.
 
-    (Hint: the `value` of these `<input>` elements will need to be stored in state variables.)
+Hint: the `value` of these `<input>` elements will need to be stored in state variables.
 
-    If you need help, something like this code will be useful:
+If you need help, something like this code will be useful:
 
 ```JavaScript
 const [ myTextInputValue, setMyTextInputValue ] = useState<string>('');
@@ -51,8 +51,9 @@ const [ myTextInputValue, setMyTextInputValue ] = useState<string>('');
 <input value={myTextInputValue} onChange={(event) => { /* some code to setMyTextInputValue based on 'event' */}}/>
 ```
 
--   Add a 'submit' button to the form which adds the new cat to the array of cats.
-    (Hint: your onClick handler for the button needs to update the array in state.)
+- Add a 'submit' button to the form which adds the new cat to the array of cats.
+
+Hint: your onClick handler for the button needs to update the array in state.
 
 These new cats/dogs won't have any images associated, so you'll have to make sure your image logic can handle missing image data!
 
@@ -60,6 +61,6 @@ These new cats/dogs won't have any images associated, so you'll have to make sur
 
 If you've got this far then you are more than getting the hang of React!
 
-And it was you (YOU YOU YOU!) that let the dogs out.
+And it was you (YOU YOU YOU!) that let the dogs out. 🐶
 
 Chuck Norris greatness achieved. 👊
