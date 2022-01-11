@@ -39,9 +39,12 @@ In the `cat_card.tsx` file add the `<CatImage/>` component:
 import cat1 from '../assets/images/cat1.jpg';
 
 // rest of file...
+	<p className='card__text'>Birth Year: 1984</p>
 
-<CatImage image={image} altText="A lovely cat (or your own description here!)" />
+	<CatImage image={image} altText="A lovely cat (or your own description here!)" />
 ```
+
+Note: You could insert the cat image component in-between any of the `<p>` tags! Have a play around and see where you think it looks best 😊
 
 Now we're showing the same image for every cat. But before we fix that... you might have noticed the `licences.txt` file in the images folder. We don't own the original images - they're available under various creative commons licences.
 
@@ -61,7 +64,9 @@ interface CatImageProps {
 }
 ```
 
-We can display this props by adding some JSX under the `<img>` tag in `cat_image.tsx`:
+Don't forget to add these new properties to our `CatImage` components parameters too! 
+
+We can display these props by adding some JSX under the `<img>` tag in `cat_image.tsx`:
 
 ```JavaScript
 // cat_image.tsx
@@ -79,7 +84,7 @@ We can display this props by adding some JSX under the `<img>` tag in `cat_image
 
 We're using the pattern of `{ someBooleanCondition && <SomeComponent/>}` which will conditionally render that component if the condition is true. In this case, we only want to show the "by Whoever" part if there's an attribution name present.
 
-Now we have to go through the images folder and pass the correct cat picture in for each cat. Luckily, we've done the boring part for you. Here's an array which links all the cat images with the correct licences. Let's add it to `cat_card.tsx`:
+Now we have to go through the images folder and pass the correct cat picture in for each cat. Luckily, we've done the boring part for you. Here's an array which links all the cat images with the correct licences. Let's add it to the top of `cat_card.tsx`:
 
 ```JavaScript
 // cat_card.tsx
@@ -219,18 +224,18 @@ Don't forget to add the `catIndex` to our cat card properties interface! (Hint: 
 Now each `CatCard` knows which image is correct, so we can pass the image props down to our `CatImage` component:
 
 ```JavaScript
-	<CatImage
-				image={images[catIndex].image}
-				altText={images[catIndex].altText}
-				licenceType={images[catIndex].licenceType}
-				licenceUrl={images[catIndex].licenceUrl}
-				attributionName={images[catIndex].attributionName}
-				attributionUrl={images[catIndex].attributionUrl}
-			/>
+		<CatImage 
+			image={images[props.catIndex].image}
+			altText={images[props.catIndex].altText}
+			licenceType={images[props.catIndex].licenceType}
+			licenceUrl={images[props.catIndex].licenceUrl}
+			attributionName={images[props.catIndex].attributionName}
+			attributionUrl={images[props.catIndex].attributionUrl}
+		/>
 ```
 
-_Note: This is kind of a silly design!_ It would make much more sense to load all of the image data together with all the cat data in `App.tsx` and then pass in all the image props along with the cat data like this: `<CatCard catData={catData} imageData={someImageData}/>`. But sometimes it's useful to do things the silly way so we can see the advantages of the sensible way! And this way allowed us to play with the `index` of the `map` function too, which can come in handy in other situations.
+_Note: This is kind of a silly design!_ It would make much more sense to load all of the image data together with all the cat data in `App.tsx` and then pass in all the image props along with the cat data like this: `<CatCard catData={catData} imageData={someImageData}/>`. But sometimes it's useful to do things the silly way so we can see the advantages of the sensible way! And this way allowed us to play with the `index` of the `map` function too, which can come in handy in other situations. 🙂
 
-(We will come back to this later, but if you want, you can go back and refactor at the end of the assignemnt - so all the data is stored in `App.tsx` and passed down as props in a cleaner manner.)
+(We will come back to this later, but if you want, you can go back and refactor at the end of the assignment - so all the data is stored in `App.tsx` and passed down as props in a cleaner manner.)
 
 Yay! Now we have images and licence information! Let's move onto [Activity 7](./activity_7.md)
