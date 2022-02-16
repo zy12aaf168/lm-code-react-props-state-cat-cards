@@ -40,17 +40,8 @@ The page will reload if you make edits 👍
 
 You will also see any lint errors in the console ✅
 
+You'll see there's a (very) basic React app already created for you. Have an explore of the files and get a sense of what it's doing. We're going to be adding features to make it more interactive.
+
 Meow, lets get started!
 
-# Learning ~~Recat~~ Recap
-
-![Recap](./public/recat.png)
-
-So previously on Cat Cards The React App we learnt:
-
--   about the file structure of a React application
--   that a component is a reusable piece of code that looks like a JavaScript function but returns JSX
-
-Cool. 😺
-
-Head over to [Activity 1](./activities/activity_1.md) to get started!
+Head over to [Activity 1](./activities/activity_1.md) to begin!

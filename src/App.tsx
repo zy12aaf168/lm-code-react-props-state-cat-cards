@@ -4,7 +4,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 
 function App() {
-	// Your code here!
+	// JavaScript code can be inserted here!
 
 	return (
 		<>
@@ -12,7 +12,7 @@ function App() {
 			<Header />
 
 			<main>
-				<div className='cards__wrapper'>{/* And here! */}</div>
+				<div className='cards__wrapper'>{/* JSX code can go here */}</div>
 			</main>
 
 			<Footer />
