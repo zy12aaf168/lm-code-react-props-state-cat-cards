@@ -1,8 +1,8 @@
 # React Props and State
 
-Welcome back to the wonderful world of React Part 2!
+Welcome to the wonderful world of React!
 
-This time we'll be investigating React Props and State. Let's get started 🙌
+We'll be investigating components, props and state. Let's get started 🙌
 
 ![React Atom](./public/catom-dog.png)
 
