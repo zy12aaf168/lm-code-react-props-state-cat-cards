@@ -50,6 +50,8 @@ In this guide we'll be taking a lump (technical term) of cat data, adding it to 
 
 When we talk about State in React, what we're really talking about is the _data_ underpinning our application and how that might _change_. React "reacts" to changes in state/data. Whenever the state of a component changes, the component re-renders.
 
+💡 Note: rendering  is just a fancy word for drawing - when we write our components to the screen, we say that they render. In React, whenever a functional component renders, the function is called.
+
 To use state in React we have to use the `useState()` function. In React speak, this function is called a "hook", but we'll explore deeper into what hooks are in another Lab. For now, just know this is an in-built function React offers us to help keep track of our applications changes.
 
 ## Step 1 - What are we waiting for? Let's use some!
