@@ -3,8 +3,9 @@ import Navbar from './components/navbar';
 import Header from './components/header';
 import Footer from './components/footer';
 
-function App() {
-	// JavaScript code can be inserted here!
+function App(): JSX.Element {
+
+	// JavaScript/TypeScript code can be inserted here!
 
 	return (
 		<>
