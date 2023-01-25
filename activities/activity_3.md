@@ -10,7 +10,7 @@ Now before we hook these two up to each other, let's render our cat card on the 
 
 ## Step 1
 
-In App's return statement, replace the ` {/* And here! */}` comment with your cat card.
+In App's return statement, replace the `{/* JSX code can go here */}` comment with your cat card.
 
 <details>
 <summary>Click here to see the answer</summary>
