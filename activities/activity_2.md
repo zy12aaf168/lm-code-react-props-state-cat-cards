@@ -1,6 +1,6 @@
 # Activity 2 - Create a Cat Card
 
-Let's create a reusable component, an all-seeing, all-powerful cat card, that looks different depending on what data we feed it! 👁 🐈
+Instead of hard coding our cat cards (like we did when we copied and pasted that HTML earlier), let's create a reusable component, that looks different depending on what data we feed it! 👁 🐈
 
 Can you remember how to create a component?
 
