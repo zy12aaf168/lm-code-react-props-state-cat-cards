@@ -26,7 +26,7 @@ In `App.tsx` paste this HTML inside the `<div>` tag, where it says "JSX code can
 
 Great! Except...
 
-Every cats name and subsequent information is currently hard coded (e.g. we had to write out each piece of cat information individually). This is obviously far from ideal if we want to get our cat information from an outside source and also results in lots of repetition. Yuck!
+Every cats name and subsequent information is currently hard coded e.g. we had to write out each piece of cat information individually (or in our case, copy and paste it). This is obviously far from ideal if we want to get our cat information from an outside source and also results in a lot of repetition. Yuck!
 
 So let's _delete all that HTML we just added_, so your App JSX looks like this again:
 
