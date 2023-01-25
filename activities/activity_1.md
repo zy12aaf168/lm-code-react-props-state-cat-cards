@@ -1,6 +1,6 @@
 # Activity 1 - Using State and feeling Great!
 
-In `App.tsx` paste this HTML inside the `<div>` tag, where it says "JSX code can go here":
+In `App.tsx` paste this HTML inside the `<div>` tag, where it says "JSX code can go here" (don't forget to delete the curly braces! {}):
 
 ```JavaScript
   <div className="cards__wrapper">
@@ -19,9 +19,10 @@ In `App.tsx` paste this HTML inside the `<div>` tag, where it says "JSX code can
             <p className="card__text">Favourite Food(s): Wet food, dry food</p>
             <p className="card__text">Birth Year: 2016</p>
           </div>
+  </div>
 ```
 
-👉 Use `npm start` and browse to [http://localhost:3000](http://localhost:3000) to see the app.
+👉 If you haven't already, use `npm start` and browse to [http://localhost:3000](http://localhost:3000) to see the app.
 
 Great! Except...
 
