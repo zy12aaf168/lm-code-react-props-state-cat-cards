@@ -95,9 +95,13 @@ export default interface Cat {
 }
 ```
 
-Now our app knows what a cat is, we can start using it!
+Now our app knows what a cat is, we can start using it! Import our `Cat` interface to App.tsx:
 
-At the top of our `App` function in `App.tsx`, add this line of code above the return statement:
+``` JavaScript
+import Cat from './data/cat';
+```
+
+Now, at the top of our `App` function in `App.tsx`, add this line of code above the return statement:
 
 ```JavaScript
 const [ cats, setCats ] = useState<Array<Cat>>();
@@ -213,14 +217,8 @@ function App() {
       <Navbar />
       <Header />
 
-      // Your code here!
-
       <main>
-        <div className="cards__wrapper">
-
-          {/* And here! */}
-
-        </div>
+	<div className="cards__wrapper">{/* JSX code can go here */}</div>
       </main>
 
       <Footer />
