@@ -33,15 +33,16 @@ const CatImage: React.FC<CatImageProps> = ({ image, altText }) => (
 export default CatImage;
 ```
 
-In the `cat_card.tsx` file add the `<CatImage/>` component:
+In the `cat_card.tsx` file import the `<CatImage/>` component AND one our cat images from our assets/images folder:
 
 ```JavaScript
 import cat1 from '../assets/images/cat1.jpg';
+import CatImage from "./cat_image";
 
 // rest of file...
 	<p className='card__text'>Birth Year: 1984</p>
 
-	<CatImage image={image} altText="A lovely cat (or your own description here!)" />
+	<CatImage image={cat1} altText="A lovely cat (or your own description here!)" />
 ```
 
 Note: You could insert the cat image component in-between any of the `<p>` tags! Have a play around and see where you think it looks best 😊
