@@ -1,4 +1,4 @@
-# Extensions
+# Extensions 🔥
 
 You now have the opportunity to put what you've learnt into practice.
 
