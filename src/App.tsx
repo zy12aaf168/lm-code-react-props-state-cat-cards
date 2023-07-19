@@ -18,7 +18,8 @@ function App(): JSX.Element {
 
 			<main>
 				<div className='cards__wrapper'>
-					{/* JSX code can go here */}</div>
+					{cats.map(cat => <CatCard /> )}
+				</div>
 			</main>
 
 			<Footer />
