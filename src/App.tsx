@@ -2,10 +2,13 @@ import './App.css';
 import Navbar from './components/navbar';
 import Header from './components/header';
 import Footer from './components/footer';
+import { useState } from 'react';
+import Cat from './data/cat';
+import {CATDATA} from './data/cat';
 
 function App(): JSX.Element {
 
-	// JavaScript/TypeScript code can be inserted here!
+	const [cats, setCats] = useState(CATDATA)
 
 	return (
 		<>
@@ -13,7 +16,8 @@ function App(): JSX.Element {
 			<Header />
 
 			<main>
-				<div className='cards__wrapper'>{/* JSX code can go here */}</div>
+				<div className='cards__wrapper'>
+					{/* JSX code can go here */}</div>
 			</main>
 
 			<Footer />
