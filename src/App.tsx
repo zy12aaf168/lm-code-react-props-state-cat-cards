@@ -5,6 +5,7 @@ import Footer from './components/footer';
 import { useState } from 'react';
 import Cat from './data/cat';
 import {CATDATA} from './data/cat';
+import CatCard from './components/cat_card'
 
 function App(): JSX.Element {
 
