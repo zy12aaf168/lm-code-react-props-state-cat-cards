@@ -18,7 +18,9 @@ function App(): JSX.Element {
 
 			<main>
 				<div className='cards__wrapper'>
-					{cats.map(cat => <CatCard /> )}
+					{
+						cats.map((cat) => (<CatCard {...cat}/>
+					))}
 				</div>
 			</main>
 
