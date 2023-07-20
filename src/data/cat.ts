@@ -10,8 +10,10 @@ import cat9 from '../assets/images/cat9.jpg';
 import cat10 from '../assets/images/cat10.jpg';
 import cat11 from '../assets/images/cat11.jpg';
 import cat12 from '../assets/images/cat12.jpg';
+import {v4 as uuidv4} from 'uuid'
 
 export default interface Cat {
+	id?: string;
     name: string;
     species: string;
     favFoods: Array<string>; // or string[]
@@ -93,6 +95,8 @@ export const CATDATA : Array<Cat> =
         birthYear: 2021,
     }
 ]
+
+CATDATA.forEach(c => {c.id = c.id = uuidv4()});
 
 export const CATIMAGES = [
 	{

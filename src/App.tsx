@@ -6,6 +6,7 @@ import { useState } from 'react';
 import {CATDATA, CATIMAGES} from './data/cat';
 import CatCard from './components/cat_card'
 
+
 function App(): JSX.Element {
 
 	const [cats, setCats] = useState(CATDATA)
@@ -18,7 +19,7 @@ function App(): JSX.Element {
 			<main>
 				<div className='cards__wrapper'>
 					{
-						cats.map((cat, index) => (<CatCard catIndex={index}{...cat}/>
+						cats.map((cat, index) => (<CatCard key={cat.id} catIndex={index}{...cat}/>
 					))}
 				</div>
 			</main>

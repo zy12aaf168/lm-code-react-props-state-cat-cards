@@ -3,6 +3,7 @@ import {CatImage} from './cat_image';
 import { CATIMAGES } from '../data/cat';
 
 interface CatCardProps {
+    id?: string;
     name: string;
     species: string;
     favFoods: Array<string>;
@@ -10,7 +11,7 @@ interface CatCardProps {
     catIndex: number;
 }
 
-const CatCard: React.FC<CatCardProps> = ({name, species, favFoods, birthYear, catIndex}) => {
+const CatCard: React.FC<CatCardProps> = ({id, name, species, favFoods, birthYear, catIndex}) => {
     return (
     <div className="card">
         <h3 className="card__text card__header">{name}</h3>
