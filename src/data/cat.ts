@@ -11,16 +11,9 @@ import cat10 from '../assets/images/cat10.jpg';
 import cat11 from '../assets/images/cat11.jpg';
 import cat12 from '../assets/images/cat12.jpg';
 import {v4 as uuidv4} from 'uuid'
+import Animal from './animal';
 
-export default interface Cat {
-	id?: string;
-    name: string;
-    species: string;
-    favFoods: Array<string>; // or string[]
-    birthYear: number;
-}
-
-export const CATDATA : Array<Cat> = 
+export const CATDATA : Array<Animal> = 
 [
     {
         name: 'Little Miss Purrfect',
