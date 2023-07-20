@@ -5,21 +5,23 @@ import Footer from './components/footer';
 import { useState } from 'react';
 import {CATDATA, CATIMAGES} from './data/cat';
 import CatCard from './components/cat_card'
+import DOGDATA from './data/dog-data';
 
 
 function App(): JSX.Element {
 
 	const [cats, setCats] = useState(CATDATA)
+	const [dogs, setDogs] = useState(DOGDATA)
 
 	return (
 		<>
 			<Navbar />
-			<Header length={cats.length} />
+			<Header catLength={cats.length} dogLength={dogs.length} />
 
 			<main>
 				<div className='cards__wrapper'>
 					{
-						cats.map((cat, index) => (<CatCard key={cat.id} catIndex={index}{...cat}/>
+						cats.concat(dogs).map((animal, index) => (<CatCard key={animal.id} animalIndex={index}{...animal}/>
 					))}
 				</div>
 			</main>
