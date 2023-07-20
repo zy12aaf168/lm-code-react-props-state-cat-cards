@@ -10,13 +10,16 @@ interface CatCardProps {
     catIndex: number;
 }
 
-const CatCard: React.FC<CatCardProps> = (props) => (
+const CatCard: React.FC<CatCardProps> = ({name, species, favFoods, birthYear, catIndex}) => {
+    return (
     <div className="card">
-        <h3 className="card__text card__header">{props.name}</h3>
-        <p className="card__text">Species: {props.species}</p>
-        <p className="card__text">Favourite Food(s): {props.favFoods}</p>
-        <p className="card__text">Birth Year: {props.birthYear}</p>
-        <CatImage {...CATIMAGES[props.catIndex]} />
-    </div>)
+        <h3 className="card__text card__header">{name}</h3>
+        <p className="card__text">Species: {species}</p>
+        <p className="card__text">Favourite Food(s): {favFoods}</p>
+        <p className="card__text">Birth Year: {birthYear}</p>
+        <CatImage {...CATIMAGES[catIndex]} />
+    </div>
+    )
+}
 
 export default CatCard;
