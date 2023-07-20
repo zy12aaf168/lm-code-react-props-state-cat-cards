@@ -3,8 +3,7 @@ import Navbar from './components/navbar';
 import Header from './components/header';
 import Footer from './components/footer';
 import { useState } from 'react';
-import Cat from './data/cat';
-import {CATDATA} from './data/cat';
+import {CATDATA, CATIMAGES} from './data/cat';
 import CatCard from './components/cat_card'
 
 function App(): JSX.Element {
@@ -19,7 +18,7 @@ function App(): JSX.Element {
 			<main>
 				<div className='cards__wrapper'>
 					{
-						cats.map((cat) => (<CatCard {...cat}/>
+						cats.map((cat, index) => (<CatCard catIndex={index}{...cat}/>
 					))}
 				</div>
 			</main>
